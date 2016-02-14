@@ -10,31 +10,21 @@
 
 import UIKit
 
+enum Action: String {
+    case Eat, Rise, Sleep, Study, School, Work, Socialize, Exercise, Chill, Date, NetflixChill, Default
+}
+
 class Event: NSObject {
     var start: NSDate = NSDate()
     var end: NSDate = NSDate()
     var act: Action
+    
     init (start: NSDate, end: NSDate, act: Action) {
         self.start = start
         self.end = end
         self.act = act
     }
-    enum Action: String {
-        case Eat = "Eat"
-        case Rise = "Rise" // waking up
-        case Sleep = "Sleep"
-        case Study = "Study"
-        case School = "School"
-        case Work = "Work"
-        case Socialize = "Socialize"
-        case Exercise = "Exercise"
-        case Chill = "Chill"
-        case Date = "Date"
-        case NetflixChill = "NetflixChill"
-        init(act: Action) {
-            self = act
-        }
-    }
+
     
     
 }
