@@ -23,7 +23,7 @@ class Schedule: NSObject {
             toDate: NSDate(),
             options: NSCalendarOptions(rawValue: 0)
         )
-        let defaultEvent: Event = Event.init(start: NSDate(), end: newDate!, act: .Chill)
+        let defaultEvent: Event = Event.init(start: NSDate(), end: newDate!, act: <#T##Event.Action#>)
         schedule[.Monday] = defaultEvent
         schedule[.Tuesday] = defaultEvent
         schedule[.Wednesday] = defaultEvent
