@@ -21,7 +21,15 @@
 		DD91AA131C7017B30070FAA2 /* ScheduleTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD91AA121C7017B30070FAA2 /* ScheduleTableViewController.swift */; };
 		DD91AA161C7017D90070FAA2 /* ScheduleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD91AA151C7017D90070FAA2 /* ScheduleTableViewCell.swift */; };
 		DD91AA181C702B480070FAA2 /* EventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD91AA171C702B480070FAA2 /* EventViewController.swift */; };
-		DD91AA1A1C7039290070FAA2 /* SF-Cartoonist-Hand in Resources */ = {isa = PBXBuildFile; fileRef = DD91AA191C7039290070FAA2 /* SF-Cartoonist-Hand */; };
+		DD91AA251C703B340070FAA2 /* SF_Cartoonist_Hand_Bold_Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DD91AA1C1C703B330070FAA2 /* SF_Cartoonist_Hand_Bold_Italic.ttf */; };
+		DD91AA261C703B340070FAA2 /* SF_Cartoonist_Hand_Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DD91AA1D1C703B330070FAA2 /* SF_Cartoonist_Hand_Bold.ttf */; };
+		DD91AA271C703B340070FAA2 /* SF_Cartoonist_Hand_Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DD91AA1E1C703B330070FAA2 /* SF_Cartoonist_Hand_Italic.ttf */; };
+		DD91AA281C703B340070FAA2 /* SF_Cartoonist_Hand_SC_Bold_Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DD91AA1F1C703B330070FAA2 /* SF_Cartoonist_Hand_SC_Bold_Italic.ttf */; };
+		DD91AA291C703B340070FAA2 /* SF_Cartoonist_Hand_SC_Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DD91AA201C703B330070FAA2 /* SF_Cartoonist_Hand_SC_Bold.ttf */; };
+		DD91AA2A1C703B340070FAA2 /* SF_Cartoonist_Hand_SC_Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DD91AA211C703B330070FAA2 /* SF_Cartoonist_Hand_SC_Italic.ttf */; };
+		DD91AA2B1C703B340070FAA2 /* SF_Cartoonist_Hand_SC.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DD91AA221C703B330070FAA2 /* SF_Cartoonist_Hand_SC.ttf */; };
+		DD91AA2C1C703B340070FAA2 /* SF_Cartoonist_Hand.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DD91AA231C703B330070FAA2 /* SF_Cartoonist_Hand.ttf */; };
+		DD91AA2D1C703B340070FAA2 /* ShyFonts Font License.txt in Resources */ = {isa = PBXBuildFile; fileRef = DD91AA241C703B330070FAA2 /* ShyFonts Font License.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,7 +70,15 @@
 		DD91AA121C7017B30070FAA2 /* ScheduleTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ScheduleTableViewController.swift; path = ViewControllers/ScheduleTableViewController.swift; sourceTree = "<group>"; };
 		DD91AA151C7017D90070FAA2 /* ScheduleTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ScheduleTableViewCell.swift; path = ViewControllers/ScheduleTableViewCell.swift; sourceTree = "<group>"; };
 		DD91AA171C702B480070FAA2 /* EventViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EventViewController.swift; path = ViewControllers/EventViewController.swift; sourceTree = "<group>"; };
-		DD91AA191C7039290070FAA2 /* SF-Cartoonist-Hand */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "SF-Cartoonist-Hand"; sourceTree = "<group>"; };
+		DD91AA1C1C703B330070FAA2 /* SF_Cartoonist_Hand_Bold_Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = SF_Cartoonist_Hand_Bold_Italic.ttf; path = "SF-Cartoonist-Hand/SF_Cartoonist_Hand_Bold_Italic.ttf"; sourceTree = "<group>"; };
+		DD91AA1D1C703B330070FAA2 /* SF_Cartoonist_Hand_Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = SF_Cartoonist_Hand_Bold.ttf; path = "SF-Cartoonist-Hand/SF_Cartoonist_Hand_Bold.ttf"; sourceTree = "<group>"; };
+		DD91AA1E1C703B330070FAA2 /* SF_Cartoonist_Hand_Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = SF_Cartoonist_Hand_Italic.ttf; path = "SF-Cartoonist-Hand/SF_Cartoonist_Hand_Italic.ttf"; sourceTree = "<group>"; };
+		DD91AA1F1C703B330070FAA2 /* SF_Cartoonist_Hand_SC_Bold_Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = SF_Cartoonist_Hand_SC_Bold_Italic.ttf; path = "SF-Cartoonist-Hand/SF_Cartoonist_Hand_SC_Bold_Italic.ttf"; sourceTree = "<group>"; };
+		DD91AA201C703B330070FAA2 /* SF_Cartoonist_Hand_SC_Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = SF_Cartoonist_Hand_SC_Bold.ttf; path = "SF-Cartoonist-Hand/SF_Cartoonist_Hand_SC_Bold.ttf"; sourceTree = "<group>"; };
+		DD91AA211C703B330070FAA2 /* SF_Cartoonist_Hand_SC_Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = SF_Cartoonist_Hand_SC_Italic.ttf; path = "SF-Cartoonist-Hand/SF_Cartoonist_Hand_SC_Italic.ttf"; sourceTree = "<group>"; };
+		DD91AA221C703B330070FAA2 /* SF_Cartoonist_Hand_SC.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = SF_Cartoonist_Hand_SC.ttf; path = "SF-Cartoonist-Hand/SF_Cartoonist_Hand_SC.ttf"; sourceTree = "<group>"; };
+		DD91AA231C703B330070FAA2 /* SF_Cartoonist_Hand.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = SF_Cartoonist_Hand.ttf; path = "SF-Cartoonist-Hand/SF_Cartoonist_Hand.ttf"; sourceTree = "<group>"; };
+		DD91AA241C703B330070FAA2 /* ShyFonts Font License.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "ShyFonts Font License.txt"; path = "SF-Cartoonist-Hand/ShyFonts Font License.txt"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,7 +129,7 @@
 		DD91A9D91C7016060070FAA2 /* Potato */ = {
 			isa = PBXGroup;
 			children = (
-				DD91AA191C7039290070FAA2 /* SF-Cartoonist-Hand */,
+				DD91AA1B1C703B290070FAA2 /* Custom Font */,
 				DD91AA141C7017C50070FAA2 /* ViewControllers */,
 				DD91AA0D1C70164E0070FAA2 /* Model */,
 				DD91A9DA1C7016060070FAA2 /* AppDelegate.swift */,
@@ -163,6 +179,22 @@
 				DD91AA171C702B480070FAA2 /* EventViewController.swift */,
 			);
 			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		DD91AA1B1C703B290070FAA2 /* Custom Font */ = {
+			isa = PBXGroup;
+			children = (
+				DD91AA1C1C703B330070FAA2 /* SF_Cartoonist_Hand_Bold_Italic.ttf */,
+				DD91AA1D1C703B330070FAA2 /* SF_Cartoonist_Hand_Bold.ttf */,
+				DD91AA1E1C703B330070FAA2 /* SF_Cartoonist_Hand_Italic.ttf */,
+				DD91AA1F1C703B330070FAA2 /* SF_Cartoonist_Hand_SC_Bold_Italic.ttf */,
+				DD91AA201C703B330070FAA2 /* SF_Cartoonist_Hand_SC_Bold.ttf */,
+				DD91AA211C703B330070FAA2 /* SF_Cartoonist_Hand_SC_Italic.ttf */,
+				DD91AA221C703B330070FAA2 /* SF_Cartoonist_Hand_SC.ttf */,
+				DD91AA231C703B330070FAA2 /* SF_Cartoonist_Hand.ttf */,
+				DD91AA241C703B330070FAA2 /* ShyFonts Font License.txt */,
+			);
+			name = "Custom Font";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -272,10 +304,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD91AA281C703B340070FAA2 /* SF_Cartoonist_Hand_SC_Bold_Italic.ttf in Resources */,
 				DD91A9E81C7016060070FAA2 /* LaunchScreen.storyboard in Resources */,
+				DD91AA2B1C703B340070FAA2 /* SF_Cartoonist_Hand_SC.ttf in Resources */,
 				DD91A9E51C7016060070FAA2 /* Assets.xcassets in Resources */,
-				DD91AA1A1C7039290070FAA2 /* SF-Cartoonist-Hand in Resources */,
+				DD91AA271C703B340070FAA2 /* SF_Cartoonist_Hand_Italic.ttf in Resources */,
+				DD91AA261C703B340070FAA2 /* SF_Cartoonist_Hand_Bold.ttf in Resources */,
 				DD91A9E01C7016060070FAA2 /* Main.storyboard in Resources */,
+				DD91AA2D1C703B340070FAA2 /* ShyFonts Font License.txt in Resources */,
+				DD91AA2C1C703B340070FAA2 /* SF_Cartoonist_Hand.ttf in Resources */,
+				DD91AA2A1C703B340070FAA2 /* SF_Cartoonist_Hand_SC_Italic.ttf in Resources */,
+				DD91AA251C703B340070FAA2 /* SF_Cartoonist_Hand_Bold_Italic.ttf in Resources */,
+				DD91AA291C703B340070FAA2 /* SF_Cartoonist_Hand_SC_Bold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
