@@ -19,20 +19,12 @@ enum Mode: String {
     case Bunny,Tomato, Potato
 }
 
-
 class Potato: NSObject {
-    var schedule:Schedule
     var name: Name
     var mode: Mode
     
-    init(mode: Mode, name:Name) {
+    init(name: Name, mode: Mode){
         self.name = name
-        self.mode = mode
-        self.schedule = Schedule()
-    }
-    
-    //Changes the mode of the Potato
-    func setMode(mode:Mode) {
         self.mode = mode
     }
     

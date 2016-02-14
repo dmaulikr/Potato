@@ -18,13 +18,15 @@ class Event: NSObject {
     var start: NSDate = NSDate()
     var end: NSDate = NSDate()
     var act: Action
+    var adj: String
+    var suggestion: String
     
-    init (start: NSDate, end: NSDate, act: Action) {
+    init (start: NSDate, end: NSDate, act: Action, adj: String, suggestion: String = "") {
         self.start = start
         self.end = end
         self.act = act
+        self.adj = adj
+        self.suggestion = suggestion
     }
-
-    
     
 }

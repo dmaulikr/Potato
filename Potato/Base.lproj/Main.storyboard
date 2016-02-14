@@ -17,6 +17,7 @@
             <string>SFCartoonistHand</string>
             <string>SFCartoonistHand</string>
             <string>SFCartoonistHand</string>
+            <string>SFCartoonistHand</string>
         </mutableArray>
         <mutableArray key="SF_Cartoonist_Hand_SC.ttf">
             <string>SFCartoonistHandSC</string>
@@ -35,23 +36,29 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="defaultPotato" translatesAutoresizingMaskIntoConstraints="NO" id="Q82-vK-pmZ">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Potato-Default" translatesAutoresizingMaskIntoConstraints="NO" id="Q82-vK-pmZ">
                                 <rect key="frame" x="150" y="144" width="300" height="300"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="300" id="Lok-ME-pyd"/>
                                     <constraint firstAttribute="width" secondItem="Q82-vK-pmZ" secondAttribute="height" multiplier="1:1" id="x54-98-bcT"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The potato is being productive. \n You should be too!" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N92-YW-bjh">
-                                <rect key="frame" x="51" y="452" width="498" height="33"/>
-                                <fontDescription key="fontDescription" name="SFCartoonistHand" family="SF Cartoonist Hand" pointSize="30"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The potato is being productive." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N92-YW-bjh">
+                                <rect key="frame" x="128.5" y="452" width="343.5" height="38.5"/>
+                                <fontDescription key="fontDescription" name="SFCartoonistHand" family="SF Cartoonist Hand" pointSize="35"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Elbert" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wGx-Mz-uec">
                                 <rect key="frame" x="232" y="84" width="137.5" height="52"/>
                                 <fontDescription key="fontDescription" name="SFCartoonistHandSC" family="SF Cartoonist Hand SC" pointSize="50"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You should be too!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IS2-5h-46S">
+                                <rect key="frame" x="199" y="498.5" width="201" height="38.5"/>
+                                <fontDescription key="fontDescription" name="SFCartoonistHand" family="SF Cartoonist Hand" pointSize="35"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -60,6 +67,8 @@
                             <constraint firstItem="N92-YW-bjh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="67V-1M-iRy"/>
                             <constraint firstItem="N92-YW-bjh" firstAttribute="top" secondItem="Q82-vK-pmZ" secondAttribute="bottom" constant="8" id="9MS-0u-PgZ"/>
                             <constraint firstItem="wGx-Mz-uec" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="Cln-B1-j6l"/>
+                            <constraint firstItem="IS2-5h-46S" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="KG7-cV-c55"/>
+                            <constraint firstItem="IS2-5h-46S" firstAttribute="top" secondItem="N92-YW-bjh" secondAttribute="bottom" constant="8" id="MEJ-vB-gcB"/>
                             <constraint firstItem="Q82-vK-pmZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="P4f-nW-eSt"/>
                             <constraint firstItem="wGx-Mz-uec" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dhu-PE-05K"/>
                             <constraint firstItem="Q82-vK-pmZ" firstAttribute="top" secondItem="wGx-Mz-uec" secondAttribute="bottom" constant="8" id="lQO-rO-DKk"/>
@@ -107,15 +116,15 @@
                                             </constraints>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Event" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SEQ-TD-nrm">
-                                            <rect key="frame" x="104.5" y="8" width="101" height="47"/>
+                                            <rect key="frame" x="104" y="8" width="73" height="44"/>
                                             <fontDescription key="fontDescription" name="SFCartoonistHand" family="SF Cartoonist Hand" pointSize="40"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nWM-1K-ppo">
-                                            <rect key="frame" x="104.5" y="58" width="66" height="35"/>
+                                            <rect key="frame" x="104" y="55" width="43.5" height="33"/>
                                             <fontDescription key="fontDescription" name="SFCartoonistHand" family="SF Cartoonist Hand" pointSize="30"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
@@ -185,13 +194,13 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="From" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o8Y-Sb-hJ0">
                                 <rect key="frame" x="20" y="399" width="49.5" height="33"/>
                                 <fontDescription key="fontDescription" name="SFCartoonistHand" family="SF Cartoonist Hand" pointSize="30"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="End" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QUu-Cl-DxN">
                                 <rect key="frame" x="544.5" y="399" width="35" height="33"/>
                                 <fontDescription key="fontDescription" name="SFCartoonistHand" family="SF Cartoonist Hand" pointSize="30"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="O9K-DW-2gO">
@@ -209,13 +218,13 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SXn-iK-nt1">
                                 <rect key="frame" x="20" y="439.5" width="560" height="33"/>
                                 <fontDescription key="fontDescription" name="SFCartoonistHand" family="SF Cartoonist Hand" pointSize="30"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="858-r1-rGQ">
                                 <rect key="frame" x="528.5" y="439.5" width="51.5" height="33"/>
                                 <fontDescription key="fontDescription" name="SFCartoonistHand" family="SF Cartoonist Hand" pointSize="30"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="30" translatesAutoresizingMaskIntoConstraints="NO" id="AQ6-Cf-qrW">
@@ -319,13 +328,13 @@
     </scenes>
     <resources>
         <image name="Add" width="42" height="42"/>
-        <image name="Cancel" width="33" height="33"/>
-        <image name="Help" width="33" height="33"/>
-        <image name="Mode" width="33" height="33"/>
+        <image name="Cancel" width="42" height="42"/>
+        <image name="Help" width="42" height="42"/>
+        <image name="Mode" width="42" height="42"/>
+        <image name="Potato-Default" width="368" height="262"/>
         <image name="RisePotato" width="368" height="262"/>
-        <image name="Save" width="33" height="33"/>
-        <image name="Schedule" width="33" height="33"/>
-        <image name="Setting" width="33" height="33"/>
-        <image name="defaultPotato" width="368" height="262"/>
+        <image name="Save" width="42" height="42"/>
+        <image name="Schedule" width="42" height="42"/>
+        <image name="Setting" width="42" height="42"/>
     </resources>
 </document>
