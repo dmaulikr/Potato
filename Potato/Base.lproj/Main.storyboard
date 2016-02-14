@@ -43,12 +43,6 @@
                                     <constraint firstAttribute="width" secondItem="Q82-vK-pmZ" secondAttribute="height" multiplier="1:1" id="x54-98-bcT"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The potato is being productive." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N92-YW-bjh">
-                                <rect key="frame" x="128.5" y="452" width="343.5" height="38.5"/>
-                                <fontDescription key="fontDescription" name="SFCartoonistHand" family="SF Cartoonist Hand" pointSize="35"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Elbert" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wGx-Mz-uec">
                                 <rect key="frame" x="232" y="84" width="137.5" height="52"/>
                                 <fontDescription key="fontDescription" name="SFCartoonistHandSC" family="SF Cartoonist Hand SC" pointSize="50"/>
@@ -57,6 +51,12 @@
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You should be too!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IS2-5h-46S">
                                 <rect key="frame" x="199" y="498.5" width="201" height="38.5"/>
+                                <fontDescription key="fontDescription" name="SFCartoonistHand" family="SF Cartoonist Hand" pointSize="35"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The potato is being productive." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N92-YW-bjh">
+                                <rect key="frame" x="128" y="452" width="343.5" height="38.5"/>
                                 <fontDescription key="fontDescription" name="SFCartoonistHand" family="SF Cartoonist Hand" pointSize="35"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -78,7 +78,7 @@
                         <leftBarButtonItems>
                             <barButtonItem image="Schedule" id="krv-z6-vkg">
                                 <connections>
-                                    <segue destination="bAJ-42-Ic4" kind="show" id="Fap-qb-M6v"/>
+                                    <segue destination="bAJ-42-Ic4" kind="show" identifier="scheduleSegue" id="Fap-qb-M6v"/>
                                 </connections>
                             </barButtonItem>
                             <barButtonItem image="Mode" id="dhS-le-B4C"/>
@@ -88,6 +88,12 @@
                             <barButtonItem image="Help" id="GMb-aR-3i7"/>
                         </rightBarButtonItems>
                     </navigationItem>
+                    <connections>
+                        <outlet property="adjLabel" destination="N92-YW-bjh" id="shj-Bm-9v5"/>
+                        <outlet property="potatoImageView" destination="Q82-vK-pmZ" id="opQ-4C-bZ3"/>
+                        <outlet property="potatoNameLabel" destination="wGx-Mz-uec" id="qWk-QP-ebx"/>
+                        <outlet property="suggestionLabel" destination="IS2-5h-46S" id="NDG-3d-txC"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -109,20 +115,20 @@
                                     <rect key="frame" x="0.0" y="0.0" width="600" height="99.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="RisePotato" translatesAutoresizingMaskIntoConstraints="NO" id="SCs-DN-Kp3">
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Potato-Rise" translatesAutoresizingMaskIntoConstraints="NO" id="SCs-DN-Kp3">
                                             <rect key="frame" x="8" y="8" width="89" height="83.5"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" secondItem="SCs-DN-Kp3" secondAttribute="height" multiplier="76:71" id="BQK-VS-VSb"/>
                                             </constraints>
                                         </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Event" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SEQ-TD-nrm">
-                                            <rect key="frame" x="104" y="8" width="73" height="44"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Event" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SEQ-TD-nrm">
+                                            <rect key="frame" x="105" y="8" width="73" height="44"/>
                                             <fontDescription key="fontDescription" name="SFCartoonistHand" family="SF Cartoonist Hand" pointSize="40"/>
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nWM-1K-ppo">
-                                            <rect key="frame" x="104" y="55" width="43.5" height="33"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nWM-1K-ppo">
+                                            <rect key="frame" x="105" y="55" width="43.5" height="33"/>
                                             <fontDescription key="fontDescription" name="SFCartoonistHand" family="SF Cartoonist Hand" pointSize="30"/>
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
@@ -332,7 +338,7 @@
         <image name="Help" width="42" height="42"/>
         <image name="Mode" width="42" height="42"/>
         <image name="Potato-Default" width="368" height="262"/>
-        <image name="RisePotato" width="368" height="262"/>
+        <image name="Potato-Rise" width="368" height="262"/>
         <image name="Save" width="42" height="42"/>
         <image name="Schedule" width="42" height="42"/>
         <image name="Setting" width="42" height="42"/>

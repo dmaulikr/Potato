@@ -12,6 +12,8 @@ enum Week: String {
     case Monday, Tuesday, Wednesday ,Thursday, Friday, Saturday, Sunday
 }
 
+//Eat, Rise, Sleep, Study, School, Work, Socialize, Exercise, Chill, Date, NetflixChill, Default
+
 class Schedule: NSObject {
     private var potatoe: Potato
     private var schedule: [Week:[Event]]
@@ -29,6 +31,7 @@ class Schedule: NSObject {
         schedule[.Thursday] = [Event]()
         schedule[.Friday] = [Event]()
         schedule[.Saturday] = [Event]()
+        
     }
     
     func dateIsInRange(date: NSDate, startDate: NSDate, endDate: NSDate) -> Bool{
@@ -66,7 +69,7 @@ class Schedule: NSObject {
 
     //Deletes an Event
     //Pre-condition: event is in schedule
-    func deleteEvent(week:Week,event:Event) {
+    func deleteEvent(event:Event) {
         let week = dayOfWeek(event.start)
         var eventList = schedule[week]!
         
