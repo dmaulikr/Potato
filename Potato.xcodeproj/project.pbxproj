@@ -15,6 +15,11 @@
 		DD91A9E81C7016060070FAA2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD91A9E61C7016060070FAA2 /* LaunchScreen.storyboard */; };
 		DD91A9F31C7016060070FAA2 /* PotatoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD91A9F21C7016060070FAA2 /* PotatoTests.swift */; };
 		DD91A9FE1C7016070070FAA2 /* PotatoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD91A9FD1C7016070070FAA2 /* PotatoUITests.swift */; };
+		DD91AA0C1C7016430070FAA2 /* Schedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD91AA0B1C7016430070FAA2 /* Schedule.swift */; };
+		DD91AA0F1C7016650070FAA2 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD91AA0E1C7016650070FAA2 /* Event.swift */; };
+		DD91AA111C7016750070FAA2 /* Potato.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD91AA101C7016750070FAA2 /* Potato.swift */; };
+		DD91AA131C7017B30070FAA2 /* ScheduleTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD91AA121C7017B30070FAA2 /* ScheduleTableViewController.swift */; };
+		DD91AA161C7017D90070FAA2 /* ScheduleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD91AA151C7017D90070FAA2 /* ScheduleTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +54,11 @@
 		DD91A9F91C7016070070FAA2 /* PotatoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PotatoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD91A9FD1C7016070070FAA2 /* PotatoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PotatoUITests.swift; sourceTree = "<group>"; };
 		DD91A9FF1C7016070070FAA2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DD91AA0B1C7016430070FAA2 /* Schedule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Schedule.swift; path = Model/Schedule.swift; sourceTree = "<group>"; };
+		DD91AA0E1C7016650070FAA2 /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Event.swift; path = Model/Event.swift; sourceTree = "<group>"; };
+		DD91AA101C7016750070FAA2 /* Potato.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Potato.swift; path = Model/Potato.swift; sourceTree = "<group>"; };
+		DD91AA121C7017B30070FAA2 /* ScheduleTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ScheduleTableViewController.swift; path = ViewControllers/ScheduleTableViewController.swift; sourceTree = "<group>"; };
+		DD91AA151C7017D90070FAA2 /* ScheduleTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ScheduleTableViewCell.swift; path = ViewControllers/ScheduleTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +109,8 @@
 		DD91A9D91C7016060070FAA2 /* Potato */ = {
 			isa = PBXGroup;
 			children = (
+				DD91AA141C7017C50070FAA2 /* ViewControllers */,
+				DD91AA0D1C70164E0070FAA2 /* Model */,
 				DD91A9DA1C7016060070FAA2 /* AppDelegate.swift */,
 				DD91A9DC1C7016060070FAA2 /* ViewController.swift */,
 				DD91A9DE1C7016060070FAA2 /* Main.storyboard */,
@@ -126,6 +138,25 @@
 				DD91A9FF1C7016070070FAA2 /* Info.plist */,
 			);
 			path = PotatoUITests;
+			sourceTree = "<group>";
+		};
+		DD91AA0D1C70164E0070FAA2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DD91AA0B1C7016430070FAA2 /* Schedule.swift */,
+				DD91AA0E1C7016650070FAA2 /* Event.swift */,
+				DD91AA101C7016750070FAA2 /* Potato.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		DD91AA141C7017C50070FAA2 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				DD91AA121C7017B30070FAA2 /* ScheduleTableViewController.swift */,
+				DD91AA151C7017D90070FAA2 /* ScheduleTableViewCell.swift */,
+			);
+			name = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -264,7 +295,12 @@
 			files = (
 				DD91A9E31C7016060070FAA2 /* Potato.xcdatamodeld in Sources */,
 				DD91A9DD1C7016060070FAA2 /* ViewController.swift in Sources */,
+				DD91AA0C1C7016430070FAA2 /* Schedule.swift in Sources */,
 				DD91A9DB1C7016060070FAA2 /* AppDelegate.swift in Sources */,
+				DD91AA131C7017B30070FAA2 /* ScheduleTableViewController.swift in Sources */,
+				DD91AA111C7016750070FAA2 /* Potato.swift in Sources */,
+				DD91AA161C7017D90070FAA2 /* ScheduleTableViewCell.swift in Sources */,
+				DD91AA0F1C7016650070FAA2 /* Event.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
