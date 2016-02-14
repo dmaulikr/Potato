@@ -15,13 +15,13 @@ enum Action: String {
 }
 
 class Event: NSObject {
+    var name: String = ""
     var start: NSDate = NSDate()
     var end: NSDate = NSDate()
     var act: Action
     var adj: String
     var suggestion: String
-    private var name: String
-    private var caption: [Action: [String]]
+    private var caption: [Action: [String]] = [Action: [String]]()
     
     init (name: String, start: NSDate, end: NSDate, act: Action, adj: String, suggestion: String = "") {
         self.name = name
