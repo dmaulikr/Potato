@@ -35,21 +35,21 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Q82-vK-pmZ">
-                                <rect key="frame" x="150" y="132" width="300" height="300"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="defaultPotato" translatesAutoresizingMaskIntoConstraints="NO" id="Q82-vK-pmZ">
+                                <rect key="frame" x="150" y="144" width="300" height="300"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="300" id="Lok-ME-pyd"/>
                                     <constraint firstAttribute="width" secondItem="Q82-vK-pmZ" secondAttribute="height" multiplier="1:1" id="x54-98-bcT"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The potato is being productive. You should be too!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N92-YW-bjh">
-                                <rect key="frame" x="143" y="440" width="315" height="22"/>
-                                <fontDescription key="fontDescription" name="SFCartoonistHand" family="SF Cartoonist Hand" pointSize="20"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The potato is being productive. \n You should be too!" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N92-YW-bjh">
+                                <rect key="frame" x="51" y="452" width="498" height="33"/>
+                                <fontDescription key="fontDescription" name="SFCartoonistHand" family="SF Cartoonist Hand" pointSize="30"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Elbert" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wGx-Mz-uec">
-                                <rect key="frame" x="232" y="72" width="137.5" height="52"/>
+                                <rect key="frame" x="232" y="84" width="137.5" height="52"/>
                                 <fontDescription key="fontDescription" name="SFCartoonistHandSC" family="SF Cartoonist Hand SC" pointSize="50"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -59,7 +59,7 @@
                         <constraints>
                             <constraint firstItem="N92-YW-bjh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="67V-1M-iRy"/>
                             <constraint firstItem="N92-YW-bjh" firstAttribute="top" secondItem="Q82-vK-pmZ" secondAttribute="bottom" constant="8" id="9MS-0u-PgZ"/>
-                            <constraint firstItem="wGx-Mz-uec" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="Cln-B1-j6l"/>
+                            <constraint firstItem="wGx-Mz-uec" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="Cln-B1-j6l"/>
                             <constraint firstItem="Q82-vK-pmZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="P4f-nW-eSt"/>
                             <constraint firstItem="wGx-Mz-uec" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dhu-PE-05K"/>
                             <constraint firstItem="Q82-vK-pmZ" firstAttribute="top" secondItem="wGx-Mz-uec" secondAttribute="bottom" constant="8" id="lQO-rO-DKk"/>
@@ -67,16 +67,16 @@
                     </view>
                     <navigationItem key="navigationItem" id="7YN-kO-SWk">
                         <leftBarButtonItems>
-                            <barButtonItem title="Schedule" id="krv-z6-vkg">
+                            <barButtonItem image="Schedule" id="krv-z6-vkg">
                                 <connections>
                                     <segue destination="bAJ-42-Ic4" kind="show" id="Fap-qb-M6v"/>
                                 </connections>
                             </barButtonItem>
-                            <barButtonItem title="Mode" id="dhS-le-B4C"/>
+                            <barButtonItem image="Mode" id="dhS-le-B4C"/>
                         </leftBarButtonItems>
                         <rightBarButtonItems>
-                            <barButtonItem title="Settings" id="JPc-th-r5B"/>
-                            <barButtonItem title="Help" id="GMb-aR-3i7"/>
+                            <barButtonItem image="Setting" id="JPc-th-r5B"/>
+                            <barButtonItem image="Help" id="GMb-aR-3i7"/>
                         </rightBarButtonItems>
                     </navigationItem>
                 </viewController>
@@ -100,7 +100,7 @@
                                     <rect key="frame" x="0.0" y="0.0" width="600" height="99.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="SCs-DN-Kp3">
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="RisePotato" translatesAutoresizingMaskIntoConstraints="NO" id="SCs-DN-Kp3">
                                             <rect key="frame" x="8" y="8" width="89" height="83.5"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" secondItem="SCs-DN-Kp3" secondAttribute="height" multiplier="76:71" id="BQK-VS-VSb"/>
@@ -142,7 +142,7 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Schedule" id="WeD-30-Mx7">
-                        <barButtonItem key="rightBarButtonItem" title="Add Event" id="Mqq-K6-W8A">
+                        <barButtonItem key="rightBarButtonItem" image="Save" id="Mqq-K6-W8A">
                             <connections>
                                 <segue destination="jO8-6c-1x2" kind="presentation" id="ERG-Eg-uZL"/>
                             </connections>
@@ -317,4 +317,13 @@
             <point key="canvasLocation" x="335" y="337"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Help" width="33" height="33"/>
+        <image name="Mode" width="33" height="33"/>
+        <image name="RisePotato" width="368" height="262"/>
+        <image name="Save" width="33" height="33"/>
+        <image name="Schedule" width="33" height="33"/>
+        <image name="Setting" width="33" height="33"/>
+        <image name="defaultPotato" width="368" height="262"/>
+    </resources>
 </document>
