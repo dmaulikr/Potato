@@ -56,6 +56,14 @@ class ScheduleTableViewController: UITableViewController {
         return cell
     }
     
+    @IBAction func cancelEvent(unwindSegue: UIStoryboardSegue){
+        
+    }
+    
+    @IBAction func addEvent(unwindSegue: UIStoryboardSegue){
+        
+    }
+    
     override func tableView(tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
         let header = view as! UITableViewHeaderFooterView
         
