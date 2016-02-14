@@ -66,8 +66,8 @@ class ScheduleTableViewController: UITableViewController {
     
     override func tableView(tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
         let header = view as! UITableViewHeaderFooterView
-        
-        //        header.textLabel?.font = UIFont(name: <#T##String#>, size: <#T##CGFloat#>)
+//        view.backgroundColor =
+        header.textLabel?.font = UIFont(name: "SFCartoonistHand", size: 30)
     }
     /*
     // Override to support conditional editing of the table view.
