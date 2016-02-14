@@ -16,7 +16,7 @@ enum Name: String {
 }
 
 enum Mode: String {
-    case Bunny,Tomato
+    case Bunny,Tomato, Potato
 }
 
 
@@ -24,43 +24,21 @@ class Potato: NSObject {
     var schedule:Schedule
     var name: Name
     var mode: Mode
-    //    var growth: Growth
-    
-    //    enum Growth: String {
-    //        case Baby = "Baby"
-    //        case Teen = "Teen"
-    //        case Adult = "Adult"
-    //        case Sprout = "Sprout"
-    //        case Plant = "Plant"
-    //        case Tree = "Tree"
-    //        init(growth:Growth) {
-    //            self = growth
-    //        }
-    //    }
     
     init(mode: Mode, name:Name) {
-        //   for index in 1...24 {
-        //     let defaultEvent = Event(time: index, act: .Chill)
-        //   self.schedule.append(defaultEvent)
-        // }
         self.name = name
         self.mode = mode
-        //        self.growth = growth
+        self.schedule = Schedule()
     }
     
     //Changes the mode of the Potato
-    func changeMode(mode:Mode) {
+    func setMode(mode:Mode) {
         self.mode = mode
     }
     
     //Changes the name of the Potato
-    func changeName(name:Name) {
+    func setName(name:Name) {
         self.name = name
     }
-    
-    //Changes the Growth of the Potato
-    //  func changeGrowth(growth: Growth) {
-    //    self.growth = growth
-    // }
 }
 
