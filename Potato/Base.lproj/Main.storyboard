@@ -7,6 +7,21 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Navigation items with more than one left or right bar item" minToolsVersion="7.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="SF_Cartoonist_Hand.ttf">
+            <string>SFCartoonistHand</string>
+            <string>SFCartoonistHand</string>
+            <string>SFCartoonistHand</string>
+            <string>SFCartoonistHand</string>
+            <string>SFCartoonistHand</string>
+            <string>SFCartoonistHand</string>
+            <string>SFCartoonistHand</string>
+            <string>SFCartoonistHand</string>
+        </mutableArray>
+        <mutableArray key="SF_Cartoonist_Hand_SC.ttf">
+            <string>SFCartoonistHandSC</string>
+        </mutableArray>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -20,22 +35,22 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Q82-vK-pmZ">
-                                <rect key="frame" x="150" y="100" width="300" height="300"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="defaultPotato" translatesAutoresizingMaskIntoConstraints="NO" id="Q82-vK-pmZ">
+                                <rect key="frame" x="150" y="144" width="300" height="300"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="300" id="Lok-ME-pyd"/>
                                     <constraint firstAttribute="width" secondItem="Q82-vK-pmZ" secondAttribute="height" multiplier="1:1" id="x54-98-bcT"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wGx-Mz-uec">
-                                <rect key="frame" x="279" y="72" width="42" height="20.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The potato is being productive. \n You should be too!" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N92-YW-bjh">
+                                <rect key="frame" x="51" y="452" width="498" height="33"/>
+                                <fontDescription key="fontDescription" name="SFCartoonistHand" family="SF Cartoonist Hand" pointSize="30"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N92-YW-bjh">
-                                <rect key="frame" x="279" y="408.5" width="42" height="20.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Elbert" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wGx-Mz-uec">
+                                <rect key="frame" x="232" y="84" width="137.5" height="52"/>
+                                <fontDescription key="fontDescription" name="SFCartoonistHandSC" family="SF Cartoonist Hand SC" pointSize="50"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -44,7 +59,7 @@
                         <constraints>
                             <constraint firstItem="N92-YW-bjh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="67V-1M-iRy"/>
                             <constraint firstItem="N92-YW-bjh" firstAttribute="top" secondItem="Q82-vK-pmZ" secondAttribute="bottom" constant="8" id="9MS-0u-PgZ"/>
-                            <constraint firstItem="wGx-Mz-uec" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="Cln-B1-j6l"/>
+                            <constraint firstItem="wGx-Mz-uec" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="Cln-B1-j6l"/>
                             <constraint firstItem="Q82-vK-pmZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="P4f-nW-eSt"/>
                             <constraint firstItem="wGx-Mz-uec" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dhu-PE-05K"/>
                             <constraint firstItem="Q82-vK-pmZ" firstAttribute="top" secondItem="wGx-Mz-uec" secondAttribute="bottom" constant="8" id="lQO-rO-DKk"/>
@@ -52,16 +67,16 @@
                     </view>
                     <navigationItem key="navigationItem" id="7YN-kO-SWk">
                         <leftBarButtonItems>
-                            <barButtonItem title="Schedule" id="krv-z6-vkg">
+                            <barButtonItem image="Schedule" id="krv-z6-vkg">
                                 <connections>
                                     <segue destination="bAJ-42-Ic4" kind="show" id="Fap-qb-M6v"/>
                                 </connections>
                             </barButtonItem>
-                            <barButtonItem title="Mode" id="dhS-le-B4C"/>
+                            <barButtonItem image="Mode" id="dhS-le-B4C"/>
                         </leftBarButtonItems>
                         <rightBarButtonItems>
-                            <barButtonItem title="Settings" id="JPc-th-r5B"/>
-                            <barButtonItem title="Help" id="GMb-aR-3i7"/>
+                            <barButtonItem image="Setting" id="JPc-th-r5B"/>
+                            <barButtonItem image="Help" id="GMb-aR-3i7"/>
                         </rightBarButtonItems>
                     </navigationItem>
                 </viewController>
@@ -69,37 +84,37 @@
             </objects>
             <point key="canvasLocation" x="1077" y="337"/>
         </scene>
-        <!--Schedule Table View Controller-->
+        <!--Schedule-->
         <scene sceneID="SXd-cw-huv">
             <objects>
                 <tableViewController id="bAJ-42-Ic4" customClass="ScheduleTableViewController" customModule="Potato" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="80" sectionHeaderHeight="28" sectionFooterHeight="28" id="xm0-YE-HYM">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="100" sectionHeaderHeight="28" sectionFooterHeight="28" id="xm0-YE-HYM">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="scheduleCell" rowHeight="80" id="QoF-5E-8xN" customClass="ScheduleTableViewCell" customModule="Potato" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="92" width="600" height="80"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="scheduleCell" rowHeight="100" id="QoF-5E-8xN" customClass="ScheduleTableViewCell" customModule="Potato" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="92" width="600" height="100"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="QoF-5E-8xN" id="Jh8-qZ-5Us">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="79.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="99.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="SCs-DN-Kp3">
-                                            <rect key="frame" x="8" y="8" width="67.5" height="63.5"/>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="RisePotato" translatesAutoresizingMaskIntoConstraints="NO" id="SCs-DN-Kp3">
+                                            <rect key="frame" x="8" y="8" width="89" height="83.5"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" secondItem="SCs-DN-Kp3" secondAttribute="height" multiplier="76:71" id="BQK-VS-VSb"/>
                                             </constraints>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Event" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SEQ-TD-nrm">
-                                            <rect key="frame" x="83" y="8" width="74.5" height="36"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                            <rect key="frame" x="104.5" y="8" width="73" height="44"/>
+                                            <fontDescription key="fontDescription" name="SFCartoonistHand" family="SF Cartoonist Hand" pointSize="40"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nWM-1K-ppo">
-                                            <rect key="frame" x="83" y="47" width="38" height="20.5"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <rect key="frame" x="104.5" y="55" width="43.5" height="33"/>
+                                            <fontDescription key="fontDescription" name="SFCartoonistHand" family="SF Cartoonist Hand" pointSize="30"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
@@ -126,10 +141,162 @@
                             <outlet property="delegate" destination="bAJ-42-Ic4" id="TtF-fN-Mf6"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" title="Schedule" id="WeD-30-Mx7">
+                        <barButtonItem key="rightBarButtonItem" image="Save" id="Mqq-K6-W8A">
+                            <connections>
+                                <segue destination="jO8-6c-1x2" kind="presentation" id="ERG-Eg-uZL"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nzw-py-ge6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1806" y="337"/>
+        </scene>
+        <!--Event View Controller-->
+        <scene sceneID="dfb-0O-ZUq">
+            <objects>
+                <viewController id="jO8-6c-1x2" customClass="EventViewController" customModule="Potato" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="1n7-aZ-JVg"/>
+                        <viewControllerLayoutGuide type="bottom" id="ryU-21-jsn"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="6a7-SE-GsS" customClass="A">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7kl-f4-PY7">
+                                <rect key="frame" x="0.0" y="10" width="600" height="44"/>
+                                <items>
+                                    <navigationItem title="Add Event" id="msJ-HM-EQQ">
+                                        <barButtonItem key="leftBarButtonItem" title="Cancel" id="elR-a8-MG5">
+                                            <connections>
+                                                <segue destination="pM3-tg-G9W" kind="unwind" unwindAction="cancelEvent:" id="ehF-w4-UOH"/>
+                                            </connections>
+                                        </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" title="Save" id="KZL-LL-k36">
+                                            <connections>
+                                                <segue destination="pM3-tg-G9W" kind="unwind" unwindAction="addEvent:" id="ybK-Wb-cdX"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="From" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o8Y-Sb-hJ0">
+                                <rect key="frame" x="20" y="399" width="49.5" height="33"/>
+                                <fontDescription key="fontDescription" name="SFCartoonistHand" family="SF Cartoonist Hand" pointSize="30"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="End" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QUu-Cl-DxN">
+                                <rect key="frame" x="544.5" y="399" width="35" height="33"/>
+                                <fontDescription key="fontDescription" name="SFCartoonistHand" family="SF Cartoonist Hand" pointSize="30"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="O9K-DW-2gO">
+                                <rect key="frame" x="200" y="113.5" width="200" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="4cR-CO-dnf"/>
+                                    <constraint firstAttribute="width" secondItem="O9K-DW-2gO" secondAttribute="height" multiplier="1:1" id="pq6-un-Z5g"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tzh-78-wf7">
+                                <rect key="frame" x="273" y="61.5" width="53.5" height="44"/>
+                                <fontDescription key="fontDescription" name="SFCartoonistHand" family="SF Cartoonist Hand" pointSize="40"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SXn-iK-nt1">
+                                <rect key="frame" x="20" y="439.5" width="560" height="33"/>
+                                <fontDescription key="fontDescription" name="SFCartoonistHand" family="SF Cartoonist Hand" pointSize="30"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="858-r1-rGQ">
+                                <rect key="frame" x="528.5" y="439.5" width="51.5" height="33"/>
+                                <fontDescription key="fontDescription" name="SFCartoonistHand" family="SF Cartoonist Hand" pointSize="30"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="30" translatesAutoresizingMaskIntoConstraints="NO" id="AQ6-Cf-qrW">
+                                <rect key="frame" x="20" y="480.5" width="560" height="216"/>
+                                <date key="date" timeIntervalSinceReferenceDate="477112546.88810998">
+                                    <!--2016-02-14 03:15:46 +0000-->
+                                </date>
+                            </datePicker>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9BE-PM-WwN">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="10"/>
+                                <color key="backgroundColor" red="0.96078431372549022" green="0.96078431372549022" blue="0.96078431372549022" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="10" id="cgR-8v-8BI"/>
+                                    <constraint firstAttribute="height" constant="10" id="kf7-vQ-6SR"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="kf7-vQ-6SR"/>
+                                    </mask>
+                                </variation>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kEd-Ck-A4f">
+                                <rect key="frame" x="20" y="321" width="560" height="70"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="HTA-cS-FBs"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="SXn-iK-nt1" firstAttribute="leading" secondItem="o8Y-Sb-hJ0" secondAttribute="leading" id="3I0-zS-4K7"/>
+                            <constraint firstItem="9BE-PM-WwN" firstAttribute="leading" secondItem="6a7-SE-GsS" secondAttribute="leadingMargin" constant="-20" id="9A2-0G-9oP"/>
+                            <constraint firstItem="Tzh-78-wf7" firstAttribute="centerX" secondItem="6a7-SE-GsS" secondAttribute="centerX" id="As6-U8-9eM"/>
+                            <constraint firstItem="O9K-DW-2gO" firstAttribute="centerX" secondItem="6a7-SE-GsS" secondAttribute="centerX" id="Bb1-8G-d0V"/>
+                            <constraint firstItem="QUu-Cl-DxN" firstAttribute="top" secondItem="kEd-Ck-A4f" secondAttribute="bottom" constant="8" id="DmL-uk-6Hc"/>
+                            <constraint firstItem="kEd-Ck-A4f" firstAttribute="top" secondItem="O9K-DW-2gO" secondAttribute="bottom" constant="8" id="HIm-fl-GqW"/>
+                            <constraint firstItem="7kl-f4-PY7" firstAttribute="top" secondItem="9BE-PM-WwN" secondAttribute="bottom" id="I0A-JC-usx"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="9BE-PM-WwN" secondAttribute="trailing" constant="-20" id="KS3-4U-FS9"/>
+                            <constraint firstItem="858-r1-rGQ" firstAttribute="trailing" secondItem="QUu-Cl-DxN" secondAttribute="trailing" id="PmK-co-Vtt"/>
+                            <constraint firstItem="AQ6-Cf-qrW" firstAttribute="leading" secondItem="SXn-iK-nt1" secondAttribute="leading" id="Qfv-1z-TZw"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="7kl-f4-PY7" secondAttribute="trailing" constant="-20" id="RVU-Ej-yHO"/>
+                            <constraint firstItem="7kl-f4-PY7" firstAttribute="top" secondItem="6a7-SE-GsS" secondAttribute="topMargin" id="ZZ6-Ky-7jA"/>
+                            <constraint firstItem="858-r1-rGQ" firstAttribute="trailing" secondItem="SXn-iK-nt1" secondAttribute="trailing" id="Zhj-RO-ZhB"/>
+                            <constraint firstItem="9BE-PM-WwN" firstAttribute="top" secondItem="6a7-SE-GsS" secondAttribute="topMargin" id="Zrd-Ju-MuR"/>
+                            <constraint firstItem="O9K-DW-2gO" firstAttribute="top" secondItem="7kl-f4-PY7" secondAttribute="bottom" constant="8" id="dfg-3a-Y2F"/>
+                            <constraint firstItem="kEd-Ck-A4f" firstAttribute="centerX" secondItem="6a7-SE-GsS" secondAttribute="centerX" id="fKo-YT-oFD"/>
+                            <constraint firstItem="7kl-f4-PY7" firstAttribute="leading" secondItem="6a7-SE-GsS" secondAttribute="leadingMargin" constant="-20" id="kOC-5J-A74"/>
+                            <constraint firstItem="AQ6-Cf-qrW" firstAttribute="top" secondItem="858-r1-rGQ" secondAttribute="bottom" constant="8" id="kSV-I3-7aq"/>
+                            <constraint firstItem="AQ6-Cf-qrW" firstAttribute="trailing" secondItem="SXn-iK-nt1" secondAttribute="trailing" id="kaW-Qh-XPT"/>
+                            <constraint firstItem="kEd-Ck-A4f" firstAttribute="trailing" secondItem="6a7-SE-GsS" secondAttribute="trailingMargin" id="lAI-8C-1SF"/>
+                            <constraint firstItem="Tzh-78-wf7" firstAttribute="top" secondItem="7kl-f4-PY7" secondAttribute="bottom" constant="8" id="mAA-jv-Swd"/>
+                            <constraint firstItem="O9K-DW-2gO" firstAttribute="top" secondItem="Tzh-78-wf7" secondAttribute="bottom" constant="8" id="n1Z-kI-7eI"/>
+                            <constraint firstItem="9BE-PM-WwN" firstAttribute="top" secondItem="6a7-SE-GsS" secondAttribute="topMargin" id="pOk-dQ-UJG"/>
+                            <constraint firstItem="o8Y-Sb-hJ0" firstAttribute="leading" secondItem="kEd-Ck-A4f" secondAttribute="leading" id="qOe-vY-YZ0"/>
+                            <constraint firstItem="QUu-Cl-DxN" firstAttribute="trailing" secondItem="kEd-Ck-A4f" secondAttribute="trailing" id="qh6-HC-CZJ"/>
+                            <constraint firstItem="858-r1-rGQ" firstAttribute="top" secondItem="QUu-Cl-DxN" secondAttribute="bottom" constant="8" id="tny-ph-9BJ"/>
+                            <constraint firstItem="SXn-iK-nt1" firstAttribute="top" secondItem="o8Y-Sb-hJ0" secondAttribute="bottom" constant="8" id="uK2-DL-XCD"/>
+                            <constraint firstItem="858-r1-rGQ" firstAttribute="leading" secondItem="SXn-iK-nt1" secondAttribute="leading" id="vFJ-EO-rrv"/>
+                            <constraint firstItem="o8Y-Sb-hJ0" firstAttribute="top" secondItem="kEd-Ck-A4f" secondAttribute="bottom" constant="8" id="vvy-xt-faS"/>
+                            <constraint firstItem="kEd-Ck-A4f" firstAttribute="leading" secondItem="6a7-SE-GsS" secondAttribute="leadingMargin" id="x0t-kE-m2d"/>
+                            <constraint firstItem="7kl-f4-PY7" firstAttribute="top" secondItem="1n7-aZ-JVg" secondAttribute="bottom" constant="-10" id="zHj-FU-FQZ"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="pOk-dQ-UJG"/>
+                                <exclude reference="ZZ6-Ky-7jA"/>
+                                <exclude reference="zHj-FU-FQZ"/>
+                                <exclude reference="dfg-3a-Y2F"/>
+                                <exclude reference="fKo-YT-oFD"/>
+                                <exclude reference="vFJ-EO-rrv"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <toolbarItems/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="47Y-yu-dlZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="pM3-tg-G9W" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="2534" y="337"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="EEH-RB-hiP">
@@ -150,4 +317,13 @@
             <point key="canvasLocation" x="335" y="337"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Help" width="33" height="33"/>
+        <image name="Mode" width="33" height="33"/>
+        <image name="RisePotato" width="368" height="262"/>
+        <image name="Save" width="33" height="33"/>
+        <image name="Schedule" width="33" height="33"/>
+        <image name="Setting" width="33" height="33"/>
+        <image name="defaultPotato" width="368" height="262"/>
+    </resources>
 </document>

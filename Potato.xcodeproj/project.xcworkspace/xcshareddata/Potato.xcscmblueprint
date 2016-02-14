@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "5E71841AA52404FDB18DEEF6E457B3FCB6025F31",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "D11EB9B1335F8EC622A59916C739AF0B348A5187" : 0,
+    "5E71841AA52404FDB18DEEF6E457B3FCB6025F31" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "432683F7-F94C-41E6-8397-F150F3C07C97",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "D11EB9B1335F8EC622A59916C739AF0B348A5187" : "",
+    "5E71841AA52404FDB18DEEF6E457B3FCB6025F31" : "Potato\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Potato",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Potato.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/myo3\/Potato.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "5E71841AA52404FDB18DEEF6E457B3FCB6025F31"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/lulu410\/potato.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "D11EB9B1335F8EC622A59916C739AF0B348A5187"
+    }
+  ]
+}
