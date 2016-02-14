@@ -35,18 +35,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Elbert" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wGx-Mz-uec">
-                                <rect key="frame" x="231" y="72" width="137.5" height="52"/>
-                                <fontDescription key="fontDescription" name="SFCartoonistHandSC" family="SF Cartoonist Hand SC" pointSize="50"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The potato is being productive. You should be too!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N92-YW-bjh">
-                                <rect key="frame" x="63.5" y="440" width="472.5" height="33"/>
-                                <fontDescription key="fontDescription" name="SFCartoonistHand" family="SF Cartoonist Hand" pointSize="30"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Q82-vK-pmZ">
                                 <rect key="frame" x="150" y="132" width="300" height="300"/>
                                 <constraints>
@@ -54,6 +42,18 @@
                                     <constraint firstAttribute="width" secondItem="Q82-vK-pmZ" secondAttribute="height" multiplier="1:1" id="x54-98-bcT"/>
                                 </constraints>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The potato is being productive. You should be too!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N92-YW-bjh">
+                                <rect key="frame" x="143" y="440" width="315" height="22"/>
+                                <fontDescription key="fontDescription" name="SFCartoonistHand" family="SF Cartoonist Hand" pointSize="20"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Elbert" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wGx-Mz-uec">
+                                <rect key="frame" x="232" y="72" width="137.5" height="52"/>
+                                <fontDescription key="fontDescription" name="SFCartoonistHandSC" family="SF Cartoonist Hand SC" pointSize="50"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
