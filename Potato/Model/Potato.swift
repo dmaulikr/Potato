@@ -11,27 +11,20 @@
 
 import UIKit
 
+enum Name: String {
+    case Elbert,Donovan
+}
+
+enum Mode: String {
+    case Bunny,Tomato
+}
+
+
 class Potato: NSObject {
-    var schedule = [Week:Event]()
+    var schedule:Schedule
     var name: Name
     var mode: Mode
     //    var growth: Growth
-    
-    enum Name: String {
-        case Elbert = "Elbert"
-        case Donovan = "Donovan"
-        init(n:Name) {
-            self = n
-        }
-    }
-    
-    enum Mode: String {
-        case Bunny = "Bunny"
-        case Tomato = "Tomato"
-        init(mod:Mode) {
-            self = mod
-        }
-    }
     
     //    enum Growth: String {
     //        case Baby = "Baby"
@@ -45,19 +38,6 @@ class Potato: NSObject {
     //        }
     //    }
     
-    enum Week: String {
-        case Monday = "Monday"
-        case Tuesday = "Tuesday"
-        case Wednesday = "Wednesday"
-        case Thursday = "Thursday"
-        case Friday = "Friday"
-        case Saturday = "Saturday"
-        case Sunday = "Sunday"
-        init(week:Week){
-            self = week
-        }
-    }
-    
     init(mode: Mode, name:Name) {
         //   for index in 1...24 {
         //     let defaultEvent = Event(time: index, act: .Chill)
@@ -66,18 +46,6 @@ class Potato: NSObject {
         self.name = name
         self.mode = mode
         //        self.growth = growth
-    }
-    
-    //Adds an Event to the schedule
-    func addEvent(week:Week,event:Event) {
-        schedule[week] = event
-    }
-    
-    //Deletes an Event
-    //Sets the Event action to .Chill
-    func deleteEvent(week:Week,event:Event) {
-        schedule[week]!.act = .Chill
-        
     }
     
     //Changes the mode of the Potato
