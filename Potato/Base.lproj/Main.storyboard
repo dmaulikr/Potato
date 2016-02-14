@@ -89,17 +89,6 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-<<<<<<< HEAD
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IS2-5h-46S">
-                                <rect key="frame" x="299.5" y="498" width="0.0" height="0.0"/>
-                                <fontDescription key="fontDescription" name="SFCartoonistHand" family="SF Cartoonist Hand" pointSize="35"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Elbert is a potato." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N92-YW-bjh">
-                                <rect key="frame" x="200" y="452" width="199.5" height="38.5"/>
-                                <fontDescription key="fontDescription" name="SFCartoonistHand" family="SF Cartoonist Hand" pointSize="35"/>
-=======
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IS2-5h-46S">
                                 <rect key="frame" x="299.5" y="492.5" width="0.0" height="0.0"/>
                                 <fontDescription key="fontDescription" name="SFCartoonistHand" family="SF Cartoonist Hand" pointSize="30"/>
@@ -109,7 +98,6 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Elbert is a potato." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N92-YW-bjh">
                                 <rect key="frame" x="214.5" y="452" width="171" height="33"/>
                                 <fontDescription key="fontDescription" name="SFCartoonistHand" family="SF Cartoonist Hand" pointSize="30"/>
->>>>>>> 6ad2520c0b3ebc3b8cdd35c348bf77190daccfc0
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
