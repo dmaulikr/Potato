@@ -26,7 +26,7 @@ class ViewController: UIViewController {
         //Sunday
         schedule.addEvent(Event(name: name, day: 14, start: "7:00", end: "10:00", act: Action.Sleep))
         schedule.addEvent(Event(name: name, day: 14, start: "10:00", end: "11:00", act: Action.Rise))
-        schedule.addEvent(Event(name: name, day: 14, start: "11:00", end: "12:00", act: Action.Eat))
+        schedule.addEvent(Event(name: name, day: 14, start: "11:00", end: "12:00", act: Action.Chill))
         schedule.addEvent(Event(name: name, day: 14, start: "12:00", end: "18:00", act: Action.Chill))
         schedule.addEvent(Event(name: name, day: 14, start: "18:00", end: "19:00", act: Action.Eat))
         schedule.addEvent(Event(name: name, day: 14, start: "19:00", end: "21:00", act: Action.Socialize))
