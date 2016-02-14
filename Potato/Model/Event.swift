@@ -19,7 +19,7 @@ class Event: NSObject {
     var start: NSDate = NSDate()
     var end: NSDate = NSDate()
     var act: Action
-    private var captions: [Action: [String]] = [.Study : [" is studying really hard", "...are you?"], .Work : [" is working", "Probably more productive than you right now."], .Chill : [" is just, you know,", "chilling."], .Eat : [" is eating potato chips", "You can maybe eat something healthier"], .Sleep : [" is asleep", "Go to sleep."], .Netflix : [" is watching Netflix and...", ";)" ], .School : [" is a good student", " goes to class"], .Socialize : [" has a great social life", "—he blends in perfectly!"], .Exercise : [" exercises in hopes of being a healthier", ""], .Rise : ["Rise and shine!", "Our potato is up!"], .Default : [" is a poato.", ""]]
+    private var captions: [Action: [String]] = [.Study : [" is studying really hard.", "...are you?"], .Work : [" is working.", "Probably more productive than you right now."], .Chill : [" is just, you know,", "chilling."], .Eat : [" is eating potato chips.", "You should eat something healthier"], .Sleep : [" is asleep.", "Go to sleep."], .Netflix : [" is watching Netflix and...", ";)" ], .School : [" is a good student", " goes to class"], .Socialize : [" has a great social life", "—he blends in perfectly!"], .Exercise : [" exercises in hopes of being a healthier", ""], .Rise : ["Rise and shine!", "Our potato is up!"], .Default : [" is a poato.", ""]]
     
     init (name: String, day: Int, start: String, end: String, act: Action) {
         self.name = name
