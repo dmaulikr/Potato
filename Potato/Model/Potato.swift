@@ -38,13 +38,20 @@ class Potato: NSObject {
     //        }
     //    }
     
-    init(mode: Mode, name:Name) {
+    override init(){
+        name = .Elbert
+        mode = .Tomato
+        schedule=Schedule.init()
+    }
+    
+    init(mode: Mode, name:Name, schedule:Schedule) {
         //   for index in 1...24 {
         //     let defaultEvent = Event(time: index, act: .Chill)
         //   self.schedule.append(defaultEvent)
         // }
         self.name = name
         self.mode = mode
+        self.schedule = schedule
         //        self.growth = growth
     }
     
