@@ -20,8 +20,11 @@ class Event: NSObject {
     var act: Action
     var adj: String
     var suggestion: String
+    private var name: String
+    private var caption: [Action: [String]]
     
-    init (start: NSDate, end: NSDate, act: Action, adj: String, suggestion: String = "") {
+    init (name: String, start: NSDate, end: NSDate, act: Action, adj: String, suggestion: String = "") {
+        self.name = name
         self.start = start
         self.end = end
         self.act = act
