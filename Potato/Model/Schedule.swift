@@ -12,15 +12,13 @@ enum Week: String {
     case Monday, Tuesday, Wednesday ,Thursday, Friday, Saturday, Sunday
 }
 
-//Eat, Rise, Sleep, Study, School, Work, Socialize, Exercise, Chill, Date, NetflixChill, Default
-
 class Schedule: NSObject {
-    private var potatoe: Potato
-    private var schedule: [Week:[Event]]
+    var potato: Potato
+    var schedule: [Week:[Event]]
     private var dayOfWeek: [Int: Week] = [1 : .Sunday, 2: .Monday, 3: .Tuesday, 4: .Wednesday, 5: .Thursday, 6: .Friday, 7: .Saturday]
     
-    override init(){
-        self.potatoe = Potato(name: Name.Elbert, mode: Mode.Potato)
+    init(name: Name = .Elbert, mode: Mode = .Potato){
+        self.potato = Potato(name: name, mode: mode)
         schedule = [Week:[Event]]()
         
         //Add empty list to every day of week
@@ -32,6 +30,22 @@ class Schedule: NSObject {
         schedule[.Friday] = [Event]()
         schedule[.Saturday] = [Event]()
         
+    }
+    
+    func eventATM(date: NSDate = NSDate()) -> Event{
+        let day = dayOfWeek(date)
+        for event in schedule[day]!{
+            if dateIsInRange(date, startDate: event.start, endDate: event.end){
+                return event
+            }
+        }
+        
+        let calendar = NSCalendar.currentCalendar()
+        let startComp = calendar.components([.Hour, .Minute, .Day , .Month , .Year], fromDate: date)
+        let endDate = date.dateByAddingTimeInterval(60*60)
+        let endComp = calendar.components([.Hour, .Minute, .Day , .Month , .Year], fromDate: endDate)
+        
+        return Event(name: potato.name.rawValue, day: startComp.day, start: "\(startComp.hour):\(startComp.minute)", end: "\(endComp.hour):\(endComp.minute)", act: .Default)
     }
     
     func dateIsInRange(date: NSDate, startDate: NSDate, endDate: NSDate) -> Bool{
@@ -53,7 +67,7 @@ class Schedule: NSObject {
         let week = dayOfWeek(event.start)
         var eventList = schedule[week]!
         
-        if eventList.isEmpty{
+        if eventList.count <= 0{
             eventList.append(event)
         } else{
             var index = eventList.count-1
@@ -62,9 +76,13 @@ class Schedule: NSObject {
                     index = i
                 }
             }
+//            if index == eventList.count-1 && eventList[index] != nil{
+//                eventList.append(<#T##newElement: Event##Event#>)
+//            } attempting to fix glitch
             eventList.insert(event, atIndex: index)
         }
-
+        
+        schedule[week]! = eventList
     }
 
     //Deletes an Event
@@ -81,6 +99,7 @@ class Schedule: NSObject {
         }
         
         eventList.removeAtIndex(index)
+        schedule[week]! = eventList
         
     }
     
@@ -91,10 +110,11 @@ class Schedule: NSObject {
     }
     
     private func dayOfWeek(date: NSDate) -> Week{
-        let calendar = NSCalendar.currentCalendar()
-        let myComponents = calendar.components(.Weekday, fromDate: NSDate())
-        let weekDayNum = myComponents.weekday
-        return dayOfWeek[weekDayNum]!
+        let myCalendar = NSCalendar(calendarIdentifier: NSCalendarIdentifierGregorian)!
+        let myComponents = myCalendar.components(.Weekday, fromDate: date)
+        let weekDay = myComponents.weekday
+        
+        return dayOfWeek[weekDay]!
         
     }
 

@@ -8,17 +8,20 @@
 
 import UIKit
 
-enum Day: String{
-    case Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday
-}
-
 class ScheduleTableViewController: UITableViewController {
     
-    var dayOfWeek: [Day] = [.Monday, .Tuesday, .Wednesday, .Thursday, .Friday, .Saturday, .Sunday]
+    var dayOfWeek: [Week] = [.Monday, .Tuesday, .Wednesday, .Thursday, .Friday, .Saturday, .Sunday]
+    var schedule: Schedule?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.navigationController!.navigationBar.titleTextAttributes = [NSFontAttributeName: UIFont(name: "SFCartoonistHand", size: 40)!]
+        UIBarButtonItem.appearance().setTitleTextAttributes([NSFontAttributeName: UIFont(name: "SFCartoonistHand", size: 27)!], forState: UIControlState.Normal)
+        self.navigationItem.hidesBackButton = true
+//        let backButton = UIBarButtonItem(title: "< Back", style: UIBarButtonItemStyle.Plain, target: self, action: nil)
+//        backButton.setTitleTextAttributes([NSFontAttributeName: UIFont(name: "SFCartoonistHand", size: 40)!], forState: UIControlState.Normal)
+//        navigationController?.navigationItem.backBarButtonItem = backButton
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
         
@@ -39,8 +42,9 @@ class ScheduleTableViewController: UITableViewController {
     }
     
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return 2
+        // #warning Incomplete implementation, return the number of row
+        return (schedule?.schedule[dayOfWeek[section]]!.count)!
+
     }
     
     override func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
@@ -49,9 +53,12 @@ class ScheduleTableViewController: UITableViewController {
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("scheduleCell", forIndexPath: indexPath) as! ScheduleTableViewCell
-        
-        cell.labelEvent.text = "Eat Breakfast"
-        cell.labelTime.text = "7:30am"
+        let eventList = schedule?.schedule[dayOfWeek[indexPath.section]]!
+        let event = eventList![indexPath.row]
+        cell.labelEvent.text = event.act.rawValue
+        cell.labelTime.text = "\(event.getTime(event.start)) - \(event.getTime(event.end))"
+//        cell.imageView?.image = UIImage(named: "\(schedule!.potato.mode)-\(event.act.rawValue)")
+//        cell.imageView?.contentMode = .ScaleAspectFit
         
         return cell
     }
@@ -67,7 +74,20 @@ class ScheduleTableViewController: UITableViewController {
     override func tableView(tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
         let header = view as! UITableViewHeaderFooterView
 //        view.backgroundColor =
-        header.textLabel?.font = UIFont(name: "SFCartoonistHand", size: 30)
+        header.textLabel?.font = UIFont(name: "SFCartoonistHand", size: 50)
+    }
+    
+    override func tableView(tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 50
+    }
+    
+    override func tableView(tableView: UITableView, willDisplayCell cell: UITableViewCell, forRowAtIndexPath indexPath: NSIndexPath) {
+        let tableViewCell = cell as! ScheduleTableViewCell
+        let eventList = schedule?.schedule[dayOfWeek[indexPath.section]]!
+        let event = eventList![indexPath.row]
+        tableViewCell.imageView?.image = UIImage(named: "\(schedule!.potato.mode)-\(event.act.rawValue)")
+        tableViewCell.imageView?.contentMode = .ScaleAspectFit
+        
     }
     /*
     // Override to support conditional editing of the table view.

@@ -16,8 +16,19 @@ components.year = 2016
 components.hour = 19
 components.minute = 30
 let newDate = calendar.dateFromComponents(components)
-calendar.dateFr
 
 let day = calendar.component(NSCalendarUnit.Day, fromDate: NSDate())
 let myComponents = calendar.components(.Weekday, fromDate: NSDate())
 let weekDay = myComponents.weekday
+
+let dateFormatter = NSDateFormatter()
+dateFormatter.dateFormat = "h:mm a"
+let convertedDate = dateFormatter.stringFromDate(NSDate())
+
+//calendar.
+let comp = calendar.components(.Weekday, fromDate: newDate!)
+let weekDayNum = myComponents.weekday
+
+NSDate().dateByAddingTimeInterval(60*60)
+
+
