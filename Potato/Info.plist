@@ -26,6 +26,17 @@
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>
 	<string>Main</string>
+	<key>UIAppFonts</key>
+	<array>
+		<string>SF_Cartoonist_Hand_Bold_Italic.ttf</string>
+		<string>SF_Cartoonist_Hand_Bold.ttf</string>
+		<string>SF_Cartoonist_Hand_Italic.ttf</string>
+		<string>SF_Cartoonist_Hand_SC_Bold_Italic.ttf</string>
+		<string>SF_Cartoonist_Hand_SC_Bold.ttf</string>
+		<string>SF_Cartoonist_Hand_SC_Italic.ttf</string>
+		<string>SF_Cartoonist_Hand_SC.ttf</string>
+		<string>SF_Cartoonist_Hand.ttf</string>
+	</array>
 	<key>UIRequiredDeviceCapabilities</key>
 	<array>
 		<string>armv7</string>
